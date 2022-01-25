@@ -41,6 +41,7 @@ function getSum( a,b )
 getSum(12, 12)
 */
 
+/*
 function likes(names) {
     const firstArray = [""];
     const secondArray = ["Peter"]
@@ -75,3 +76,16 @@ function likes(names) {
 }
 
 likes([])
+*/
+
+function isValidWalk(walk) {
+    if(walk.length === 10){
+        console.log(true)
+        return true
+    } else {
+        console.log(false)
+        return false
+    }
+}
+
+isValidWalk(["n", "s", "e", "w", "n", "s", "e", "w", "n"])
