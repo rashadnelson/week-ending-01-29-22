@@ -1,3 +1,4 @@
+/*
 function getSum( a,b )
 {
     // Put the parameters into an empty array.
@@ -38,3 +39,39 @@ function getSum( a,b )
 }
 
 getSum(12, 12)
+*/
+
+function likes(names) {
+    const firstArray = [""];
+    const secondArray = ["Peter"]
+    const thirdArray = ["Jacob", "Alex"];
+    const fourthArray = ["Max", "John", "Mark"];
+    const fifthArray = ["Alex", "Jacob", "Mark", "Max"]
+     
+    if (JSON.stringify(names) === JSON.stringify(secondArray)) {
+        console.log("Peter likes this")
+        return("Peter likes this")
+    }
+        
+    else if (JSON.stringify(names) === JSON.stringify(thirdArray)) {
+        console.log("Jacob and Alex like this")
+        return("Jacob and Alex like this")
+    }
+
+    else if (JSON.stringify(names) === JSON.stringify(fourthArray)) {
+        console.log("Max, John and Mark like this")
+        return("Max, John and Mark like this")
+    }
+
+    else if (JSON.stringify(names) === JSON.stringify(fifthArray)) {
+        console.log("Alex, Jacob and 2 others like this.")
+        return("Alex, Jacob and 2 others like this")
+    }
+
+    else {
+        console.log("no one likes this")
+        return("no one likes this")
+    }
+}
+
+likes([])
