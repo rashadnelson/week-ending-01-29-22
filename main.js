@@ -78,6 +78,7 @@ function likes(names) {
 likes([])
 */
 
+/*
 function isValidWalk(walk) {
     if(walk.length === 10){
         console.log(true)
@@ -89,3 +90,36 @@ function isValidWalk(walk) {
 }
 
 isValidWalk(["n", "s", "e", "w", "n", "s", "e", "w", "n"])
+*/
+
+function findEvenIndex(arr) {
+	let arrLength = arr.length;
+
+	let arrSplit = arrLength / 2;
+	let arrFloor = Math.floor(arrSplit);
+
+	let firstSetSum = 0;
+	// ADDING THE FIRST TWO ELEMENTS
+	for (let i = 0; i < arrFloor; i++) {
+		firstSetSum = firstSetSum + arr[i];
+		// console.log(firstSetSum);
+	}
+	// console.log(firstSetSum);
+
+	let secondSetSum = 0;
+	for (let j = arrLength - 1; j > arrFloor; j--) {
+		secondSetSum = secondSetSum + arr[j];
+		//console.log(secondSetSum);
+	}
+	// console.log(secondSetSum);
+
+	if (firstSetSum === secondSetSum) {
+		console.log(firstSetSum);
+		return firstSetSum;
+	} else {
+		console.log(-1);
+		return -1;
+	}
+}
+
+findEvenIndex([15, 10, 5, 10, 10]);
