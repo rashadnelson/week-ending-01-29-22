@@ -92,6 +92,7 @@ function isValidWalk(walk) {
 isValidWalk(["n", "s", "e", "w", "n", "s", "e", "w", "n"])
 */
 
+/*
 function findEvenIndex(arr) {
 	let arrLength = arr.length;
 
@@ -123,3 +124,15 @@ function findEvenIndex(arr) {
 }
 
 findEvenIndex([15, 10, 5, 10, 10]);
+*/
+
+function toCamelCase(str) {
+	if (str.includes('-')) {
+		let newStr = str.replace('-', '');
+		console.log(newStr);
+	} else {
+		console.log("It's done.");
+	}
+}
+
+toCamelCase('the-stealth-warrior');
